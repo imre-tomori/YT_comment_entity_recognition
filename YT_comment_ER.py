@@ -1,4 +1,4 @@
-import os, sys
+import sys
 import googleapiclient.discovery
 import pandas as pd 
 import spacy 
@@ -7,8 +7,6 @@ import webbrowser
 def YT_API_connect(DEVELOPER_KEY):
 
     # Youtube API connection
-
-    os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
     api_service_name = "youtube"
     api_version = "v3"
